@@ -92,6 +92,9 @@ export default function GoogleMaps() {
       getOptionLabel={option => (typeof option === 'string' ? option : option.description)}
       filterOptions={x => x}
       options={options}
+      onChange = {(e, value)=>{
+              setInputValue(value);       
+         }}
       autoComplete
       includeInputInList
       freeSolo
